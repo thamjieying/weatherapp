@@ -1,0 +1,14 @@
+{
+  "name": "weatherForcast",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "express": "^4.16.2",
+    "nodemon": "^1.17.1"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
+  }
+}
