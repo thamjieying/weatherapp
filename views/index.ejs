@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weather App for Singapore</title>
+  </head>
+  <body>
+    <div class="container">
+        <fieldset>
+          <form action="/" method="post">
+            <select name="forcast" placeholder="Please select forcast"> <!--Supplement an id here instead of using 'text'-->
+              <option value="2hr_nowcast">Current Weather</option>
+              <option value="24hrs_forecast">24 hrs Forecast</option>
+              <option value="4days_outlook">4 days Outlook</option>
+              <option value="heavy_rain_warning">Heavy Rain Warning/option>
+              <option value="uvi">UV Index</option>
+              <option value="earthquake">Earthquake Advisory</option>
+              <option value="psi_update">PSI Update</option>
+              <option value="pm2.5_update">PM2.5 Update</option>
+            </select>
+            <input type="submit">
+          </form>
+          <% if(forcast !==null){ %>
+
+            <xml id='xmldata' style='display:none;'>
+              <%= forcast %>
+            </xml>
+          <%} %>
+          <% if(error !==null){ %>
+              <%= error %>
+          <%} %>
+        </fieldset>
+    </div>
+    <script 
+  </body>
+</html>
